@@ -267,8 +267,8 @@ export function renderFooter() {
           <div class="footer-role">${profile.role}</div>
         </div>
         <div class="powered">
-          <div class="powered-text">Powered by <b>Quantum</b></div>
-          <img src="images/quantum-logo.png" alt="Quantum S. logo" width="38" height="38" loading="lazy" />
+          <div class="powered-text">Powered by <b>Fixera</b></div>
+          <img src="images/quantum-logo.png" alt="Fixera logo" width="42" height="38" loading="lazy" />
         </div>
       </div>
     </footer>`;
