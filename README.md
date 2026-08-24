@@ -10,7 +10,7 @@ Full stack developer building secure, scalable and AI-powered web applications.
 
 I'm a full stack developer and software engineer based in Kitale, currently pursuing a **BSc in Information Technology at Kibabii University**. I design and build web applications that are **fast**, **secure** and genuinely pleasant to use — and I stay involved long after launch.
 
-I'm also the founder of **Quantum Software Systems**, a platform dedicated to creating innovative software solutions that address real challenges faced by communities and businesses today.
+I'm also the founder of **Fixera Platforms**, a platform dedicated to creating innovative software solutions that address real challenges faced by communities and businesses today.
 
 ### What I Do
 
@@ -22,9 +22,9 @@ I'm also the founder of **Quantum Software Systems**, a platform dedicated to cr
 
 ---
 
-## Quantum Software Systems 
+## Fixera Platforms 
 
-Quantum Software Systems is my venture focused on developing software solutions that create tangible impact. We work on products and services that address everyday societal challenges through technology, combining strategic thinking with clean, maintainable code.
+ Fixera Platforms is my venture focused on developing software solutions that create tangible impact. We work on products and services that address everyday societal challenges through technology, combining strategic thinking with clean, maintainable code.
 
 ---
 
