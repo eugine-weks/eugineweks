@@ -196,34 +196,33 @@ export const experience = [
 
 export const projects = [
   {
-    title: "Insight Analytics Dashboard",
+    title: "Church Management System ",
     image: "images/project-1.jpg",
     category: "Full Stack",
     description:
-      "Realtime analytics workspace with role-based access, custom reports and scheduled exports.",
+      "CAP - church system with role based access for members and Admin, and an intergrated M-pesa API.",
     tech: ["React", "Node.js", "PostgreSQL"],
-    github: "https://github.com/",
-    demo: "https://example.com/",
+    github: "https://github.com/eugine-weks/church-website",
+    demo: "https://ejneuro.github.io/church-website",
   },
   {
-    title: "Nova Commerce Storefront",
+    title: "My Portfolio website",
     image: "images/project-2.jpg",
     category: "Frontend",
-    description:
-      "Headless e-commerce storefront with instant search, optimistic cart and edge-cached pages.",
-    tech: ["JavaScript", "CSS Grid", "Headless CMS"],
-    github: "https://github.com/",
-    demo: "https://example.com/",
+    description: "This is my personal portfolio app to showcase my bio technical skills and featured projects.",
+    tech: ["JavaScript", "CSS", "Morden UI/UX"],
+    github: "https://github.com/eugine-weks/eugineweks",
+    demo: "https://eugineweks.netlify.app/",
   },
   {
-    title: "Atlas AI Assistant",
+    title: "WhatsApp Event-Booking App",
     image: "images/project-3.jpg",
     category: "Full Stack",
     description:
-      "LLM-powered assistant with streaming responses, document retrieval and usage analytics.",
+      "A WhatsApp first event booking platform with payment intergration and ticket processing.",
     tech: ["React", "Python", "OpenAI"],
-    github: "https://github.com/",
-    demo: "https://example.com/",
+    github: "https://github.com/eugine-weks",
+    demo: "https://eventshub.com/",
   },
   {
     title: "Orbit API Platform",

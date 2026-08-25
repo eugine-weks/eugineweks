@@ -26,7 +26,7 @@ export function renderNav() {
     <nav class="site-nav" aria-label="Main navigation">
       <div class="container nav-inner">
         <a class="brand" href="index.html" aria-label="${profile.name} — home">
-          <span class="brand-mark" aria-hidden="true">EW</span>
+          <span class="brand-mark" aria-hidden="true">  EJ</span>
           <span>Eugine<span class="gradient-text"> </span>Weks</span>
         </a>
         <div class="nav-right">
