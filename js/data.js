@@ -7,9 +7,9 @@ export const profile = {
   roles: ["Full Stack Developer", "UI/UX Designer", "API & AI Engineer"],
   tagline:
     "I build secure, scalable, and AI-powered web applications that solve real-world problems.",
-  email: "hello@eugineweks.dev",
-  phone: "+254 700 000 000",
-  location: "Nairobi, Kenya",
+  email: "neuroweks@gmail.com",
+  phone: "+254 180102741",
+  location: "Bungoma, Kenya",
 };
 
 export const socials = [
@@ -29,9 +29,9 @@ export const navLinks = [
 ];
 
 export const stats = [
-  { label: "Projects Completed", value: 48, suffix: "+" },
-  { label: "Years of Experience", value: 5, suffix: "" },
-  { label: "Happy Clients", value: 32, suffix: "+" },
+  { label: "Projects Completed", value: 15, suffix: "+" },
+  { label: "Years of Experience", value: 3, suffix: "" },
+  { label: "Happy Clients", value: 20, suffix: "+" },
   { label: "Technologies Used", value: 24, suffix: "" },
 ];
 
