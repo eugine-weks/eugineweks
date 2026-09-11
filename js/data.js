@@ -78,36 +78,30 @@ export const skills = [
   },
 ];
 
-export const journey = [
+ export const journey = [
   {
-    year: "2019",
-    title: "First lines of code",
+    year: "2023",
+    title: "Learned Basic Computing",
     description:
-      "Started with HTML, CSS and JavaScript, building small static sites for friends and local businesses.",
-  },
-  {
-    year: "2020",
-    title: "Went deep on JavaScript",
-    description:
-      "Learned React and Node.js and shipped my first full stack app with authentication and a database.",
-  },
-  {
-    year: "2022",
-    title: "Engineering at scale",
-    description:
-      "Joined a product team, adopted testing and CI/CD, and led frontend architecture decisions.",
+      "Learned typing printing and use of Microsoft office such as word, excel and ms access to create databases.",
   },
   {
     year: "2024",
-    title: "AI-powered products",
+    title: "First Touch of the Web",
     description:
-      "Began integrating language models, vector search and automation into production applications.",
+      "Discovered web technologies and learned responsive web  design in html, css and JavaScript.",
+  },
+  {
+    year: "2025",
+    title: "Explored Advanced JavaScript",
+    description:
+      "Learned DOM manipulation, array mapping, json data formatting and APIs in JavaScript.",
   },
   {
     year: "2026",
-    title: "Freelance & consulting",
+    title: "Full Stack Development ",
     description:
-      "Partnering with startups and agencies to design, build and maintain premium web products.",
+      "Dived into web programing and creating scalable projects in React, Typescript, Node.js, PostgreSQL and Python.",
   },
 ];
 
