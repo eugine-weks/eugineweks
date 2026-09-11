@@ -681,7 +681,7 @@ html[data-theme="light"] .hero-role {
 .social-icon:hover {
   background-color: var(--primary-color);
   color: var(--sky);
-  border-color: var(--primary-color);
+  
   transform: translateY(-3px);
   
   box-shadow: var(--shadow-glow);
@@ -1303,7 +1303,7 @@ html[data-theme="light"] .hero-role {
 }
 
 .powered-text {
-  font-size: 0.58rem;
+  font-size: 0.60rem;
   color: var(--muted);
   line-height: 1.35;
 }
