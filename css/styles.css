@@ -653,6 +653,41 @@ html[data-theme="light"] .hero-role {
   margin-top: 30px;
 }
 
+.social-icons-container {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 28px;
+}
+
+.social-icon {
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+  
+}
+
+.social-icon:hover {
+  background-color: var(--primary-color);
+  color: var(--sky);
+  border-color: var(--primary-color);
+  transform: translateY(-3px);
+  
+  box-shadow: var(--shadow-glow);
+}
+
+
 .socials {
   display: flex;
   justify-content: center;
@@ -796,7 +831,7 @@ html[data-theme="light"] .hero-role {
   .hero-actions {
     flex-direction: row;
   }
-  .socials {
+  .social-icons-container {
     justify-content: flex-start;
   }
   .scroll-cue {
