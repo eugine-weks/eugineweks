@@ -154,9 +154,9 @@ export const services = [
 
 export const experience = [
   {
-    role: "Senior Full Stack Developer",
-    company: "Quantum S. (Placeholder)",
-    duration: "2024 — Present",
+    role: "Founder & Software Engineer",
+    company: "Fixera Platforms",
+    duration: "2026 — Present",
     responsibilities: [
       "Lead development of AI-assisted client platforms end to end.",
       "Own frontend architecture, the design system and code review culture.",
@@ -165,26 +165,24 @@ export const experience = [
     tech: ["React", "TypeScript", "Node.js", "PostgreSQL", "AWS"],
   },
   {
-    role: "Full Stack Developer",
-    company: "Placeholder Tech Ltd",
-    duration: "2022 — 2024",
+    role: "Founder & Developer",
+    company: "Quantum Systems",
+    duration: "2024 — 2026",
     responsibilities: [
-      "Built customer dashboards used by thousands of monthly users.",
-      "Designed REST APIs and background job pipelines.",
-      "Reduced page load time by 45% through profiling and caching.",
+      "Explored the design of modern interactive and reponsive websites for the purpose of learning.",
+      "Created my first website including my portfolio website and a frontend site for christ for all people church."
     ],
-    tech: ["Next.js", "Express", "MongoDB", "Docker"],
+    tech: ["HTML5", "CSS3", "JavaScript", "VS Code"],
   },
   {
-    role: "Frontend Developer",
-    company: "Placeholder Studio",
-    duration: "2020 — 2022",
+    role: "Learned Computer Studies",
+    company: "Chewoyet High",
+    duration: "2021 — 2024",
     responsibilities: [
-      "Delivered marketing sites and web apps for agency clients.",
-      "Introduced a reusable component library and accessibility checks.",
-      "Worked closely with designers on motion and visual polish.",
+      "Learned basic computing and computer best practices for day to day use.",
+      "Introduced to database design and created information management systems using Microsoft access.",
     ],
-    tech: ["JavaScript", "SCSS", "Figma", "Netlify"],
+    tech: ["MS Access", "Excell", "Word", "Powerpoint"],
   },
 ];
 
