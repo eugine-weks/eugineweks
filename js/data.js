@@ -23,16 +23,16 @@ export const navLinks = [
   { label: "Home", href: "index.html" },
   { label: "About", href: "about.html" },
   { label: "Skills", href: "skills.html" },
-  { label: "Services", href: "services.html" },
   { label: "Projects", href: "projects.html" },
+  { label: "Services", href: "services.html" },
   { label: "Contact", href: "contact.html" },
 ];
 
 export const stats = [
-  { label: "Projects Completed", value: 15, suffix: "+" },
+  { label: "Projects Completed", value: 5, suffix: "+" },
   { label: "Years of Experience", value: 3, suffix: "" },
-  { label: "Happy Clients", value: 20, suffix: "+" },
-  { label: "Technologies Used", value: 24, suffix: "" },
+  { label: "Happy Clients", value: 10, suffix: "+" },
+  { label: "Technologies Used", value: 12, suffix: "" },
 ];
 
 export const skills = [
