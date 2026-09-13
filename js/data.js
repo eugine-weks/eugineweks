@@ -14,9 +14,9 @@ export const profile = {
 
 export const socials = [
   { name: "Facebook", icon: "facebook", url: "https://facebook.com/" },
-  { name: "LinkedIn", icon: "linkedin", url: "https://linkedin.com/" },
-  { name: "GitHub", icon: "github", url: "https://github.com/" },
-  { name: "Instagram", icon: "instagram", url: "https://instagram.com/" },
+  { name: "LinkedIn", icon: "linkedin", url: "https://www.linkedin.com/in/eugine-weks-b22652384" },
+  { name: "GitHub", icon: "github", url: "https://github.com/eugine-weks" },
+  { name: "Instagram", icon: "instagram", url: "https://instagram.com/e.j_neuro" },
 ];
 
 export const navLinks = [
