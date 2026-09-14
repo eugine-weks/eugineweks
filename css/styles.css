@@ -418,7 +418,7 @@ html[data-theme="light"] .glow {
   color: #04121f;
   display: grid;
   place-items: center;
-  font-size: 0.85rem;
+  font-size: 1.1rem;
   font-weight: 800;
   letter-spacing: 0;
   box-shadow: var(--shadow-glow);
