@@ -39,18 +39,20 @@ export const skills = [
   {
     title: "Frontend Development",
     icon: "layout",
+    proficiency: "Advanced",
     level: 95,
     description:
       "Pixel-accurate, accessible interfaces built with modern component architecture and design systems.",
-    stack: ["HTML5", "CSS3", "JavaScript", "React"],
+    stack: [{name:"HTML5", icon:"fab fa-html5"}, {name:"CSS3", icon:"fab fa-css3-alt"}, {name:"JavaScript", icon:"fab fa-js"}, {name:"React", icon:"fab fa-react"}],
   },
   {
     title: "Backend Development",
     icon: "server",
-    level: 90,
+    proficiency: "Intermediate",
+    level: 80,
     description:
       "Secure, well-tested services, authentication flows and business logic built to scale.",
-    stack: ["Node.js", "Express", "Python", "PostgreSQL"],
+    stack: [{name:"Node.js", icon:"fab fa-node"}, {name:"PostgreSQL", icon:"devicon-postgresql-plain colored"}, {name:"Typescript", icon:"devicon-typescript-plain colored"}, {name:"Python", icon:"devicon-python-plain colored"}],
   },
   {
     title: "APIs & AI Integration",

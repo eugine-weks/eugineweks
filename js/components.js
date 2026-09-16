@@ -112,8 +112,10 @@ export function renderSkills() {
         <h3>${s.title}</h3>
         <p class="lead" style="font-size:.95rem;margin-top:10px">${s.description}</p>
         <div class="meter"><span data-meter="${s.level}"></span></div>
-        <div class="meter-label"><span>Proficiency</span><span>${s.level}%</span></div>
-        <div class="chip-row" style="margin-top:16px">${s.stack.map((t) => `<span class="chip">${t}</span>`).join("")}</div>
+        <div class="meter-label"><span>${s.proficiency}</span><span>${s.level}%</span></div>
+        <div class="chip-row" style="margin-top:16px">${s.stack.map((t) => `<span class="chip">
+          <i class="${t.icon}"></i>${t.name}</span>`).join("")}
+        </div>
       </article>`,
     )
     .join("");
