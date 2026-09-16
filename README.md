@@ -94,9 +94,9 @@ This repository contains my professional portfolio website built with clean, sem
 
 Interested in working together or discussing ideas? Let's talk.
 
-- **Email:** [hello@eugineweks.dev](mailto:hello@eugineweks.dev)
-- **Website:** [eugineweks.dev](https://eugineweks.dev)
-- **GitHub:** [@ejneuro](https://github.com/ejneuro)
+- **Email:** [hello@eugineweks.dev](mailto: neuroweks@gmail.com)
+- **Website:** [eugineweks.dev](https://eugineweks.vercel.app)
+- **GitHub:** [@eugine-weks](https://github.com/eugine-weks)
 
 ---
 
