@@ -925,7 +925,18 @@ html[data-theme="light"] .hero-role {
   color: var(--muted);
   margin-top: 10px;
 }
-
+.fa-html5{
+  color: orangered;
+}
+.fa-css3-alt{
+  color: deepskyblue;
+}
+.fa-js{
+  color: orange;
+}
+.fa-node{
+  color: mediumpurple;
+}
 /* ---------- Timeline ---------- */
 
 .timeline {
