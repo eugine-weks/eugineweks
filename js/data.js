@@ -55,14 +55,6 @@ export const skills = [
     stack: [{name:"Node.js", icon:"fab fa-node"}, {name:"PostgreSQL", icon:"devicon-postgresql-plain colored"}, {name:"Typescript", icon:"devicon-typescript-plain colored"}, {name:"Python", icon:"devicon-python-plain colored"}],
   },
   {
-    title: "APIs & AI Integration",
-    icon: "sparkles",
-    level: 88,
-    description:
-      "REST and GraphQL APIs plus LLM-powered features such as smart search, chat and automation.",
-    stack: ["REST", "GraphQL", "OpenAI", "Webhooks"],
-  },
-  {
     title: "UI/UX Appreciation",
     icon: "pen",
     level: 85,
