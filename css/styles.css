@@ -1395,7 +1395,7 @@ html[data-theme="light"] .hero-role {
 
 /* ----- API and AI animation ---*/
    .integration-card {
-      background: linear-gradient(145deg, #111827, #1f2937);
+      
       border: 1px solid rgba(255, 255, 255, 0.05);
       border-radius: 24px;
       padding: 32px;
