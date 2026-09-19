@@ -166,6 +166,7 @@ function initContactForm() {
 }
 
 /* -----AI&API animation -------- */
+function intApiAnimation(){
 document.addEventListener("DOMContentLoaded", () => {
       const skillItems = document.querySelectorAll(".skill-item");
       const circumference = 314.16;
@@ -201,6 +202,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const observer = new IntersectionObserver(animateSkills, { threshold: 0.1 });
       skillItems.forEach(item => observer.observe(item));
     });
+}
 
 /* ---------- Boot ---------- */
 
@@ -211,6 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderSocials();
   renderStats();
   renderSkills();
+  intApiAnimation();
   renderJourney();
   renderServices();
   renderExperience();
