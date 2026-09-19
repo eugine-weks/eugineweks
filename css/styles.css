@@ -1392,3 +1392,160 @@ html[data-theme="light"] .hero-role {
     transform: none;
   }
 }
+
+/* ----- API and AI animation ---*/
+   .integration-card {
+      background: linear-gradient(145deg, #111827, #1f2937);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 24px;
+      padding: 32px;
+      width: 100%;
+      max-width: 900px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 
+                  inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .integration-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(30, 144, 255, 0.12) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 36px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .card-icon {
+      background: linear-gradient(135deg, #1e90ff, #1e40af);
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 16px;
+      color: #fff;
+      font-size: 1.25rem;
+      box-shadow: 0 4px 12px rgba(30, 144, 255, 0.3);
+    }
+
+    .card-title {
+      color: #f3f4f6;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 28px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .skill-item {
+      background: rgba(255, 255, 255, 0.01);
+      border: 1px solid rgba(255, 255, 255, 0.03);
+      border-radius: 20px;
+      padding: 24px 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+    }
+
+    .skill-item:hover {
+      transform: translateY(-4px);
+      border-color: rgba(30, 144, 255, 0.2);
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .progress-box {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      margin-bottom: 20px;
+    }
+
+    .progress-box svg {
+      width: 120px;
+      height: 120px;
+      transform: rotate(-90deg);
+    }
+
+    .progress-box .circle-bg {
+      fill: none;
+      stroke: rgba(255, 255, 255, 0.04);
+      stroke-width: 10;
+    }
+
+    .progress-box .circle-progress {
+      fill: none;
+      stroke-width: 10;
+      stroke-linecap: round;
+      stroke-dasharray: 314.16;
+      stroke-dashoffset: 314.16; 
+      transition: stroke-dashoffset 2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .percentage-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #ffffff;
+      font-size: 1.35rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .skill-pill {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.06);
+      color: #9ca3af;
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: center;
+      border: 1px solid transparent;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      cursor: default;
+      width: 90%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    .skill-item:hover .skill-pill {
+      background: #1e90ff;
+      color: #ffffff;
+      box-shadow: 0 4px 14px rgba(30, 144, 255, 0.4);
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Refactored Unique Glow Colors */
+    .color-rest { stroke: #00bcd4; filter: drop-shadow(0 0 6px rgba(0, 188, 212, 0.5)); }
+    .color-graphql { stroke: #e10098; filter: drop-shadow(0 0 6px rgba(225, 0, 152, 0.5)); }
+    .color-mpesa { stroke: #4caf50; filter: drop-shadow(0 0 6px rgba(76, 175, 80, 0.5)); }
+    .color-gateway { stroke: #ff7a00; filter: drop-shadow(0 0 6px rgba(255, 122, 0, 0.5)); }
+    .color-websockets { stroke: #9c27b0; filter: drop-shadow(0 0 6px rgba(156, 39, 176, 0.5)); }
+    .color-oauth { stroke: #ff5722; filter: drop-shadow(0 0 6px rgba(255, 87, 34, 0.5)); }
+
+    @media (max-width: 540px) {
+      .integration-card { padding: 24px 16px; }
+      .skills-grid { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; }
+      .progress-box, .progress-box svg { width: 100px; height: 100px; }
+}
