@@ -165,6 +165,43 @@ function initContactForm() {
   });
 }
 
+/* -----AI&API animation -------- */
+document.addEventListener("DOMContentLoaded", () => {
+      const skillItems = document.querySelectorAll(".skill-item");
+      const circumference = 314.16;
+
+      const animateSkills = (entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const item = entry.target;
+            const targetPercent = parseInt(item.getAttribute("data-target-percent"), 10);
+            const progressCircle = item.querySelector(".circle-progress");
+            const percentText = item.querySelector(".percentage-text");
+            
+            const offset = circumference - (targetPercent / 100) * circumference;
+            progressCircle.style.strokeDashoffset = offset;
+
+            let currentPercent = 0;
+            const duration = 2000;
+            const stepTime = Math.abs(Math.floor(duration / targetPercent));
+            
+            const timer = setInterval(() => {
+              currentPercent++;
+              percentText.textContent = currentPercent + "%";
+              if (currentPercent >= targetPercent) {
+                clearInterval(timer);
+              }
+            }, stepTime);
+
+            observer.unobserve(item);
+          }
+        });
+      };
+
+      const observer = new IntersectionObserver(animateSkills, { threshold: 0.1 });
+      skillItems.forEach(item => observer.observe(item));
+    });
+
 /* ---------- Boot ---------- */
 
 document.addEventListener("DOMContentLoaded", () => {
