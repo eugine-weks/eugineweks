@@ -119,6 +119,90 @@ export function renderSkills() {
       </article>`,
     )
     .join("");
+
+    <div class="integration-card">
+    <div class="card-header">
+      <div class="card-icon">
+        <i class="fa-solid : code-branch"></i>
+      </div>
+      <h2 class="card-title">API & Architecture Integration</h2>
+    </div>
+
+    <div class="skills-grid">
+      <!-- 1. REST APIs -->
+      <div class="skill-item" data-target-percent="95">
+        <div class="progress-box">
+          <svg viewBox="0 0 120 120">
+            <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="circle-progress color-rest" cx="60" cy="60" r="50"></circle>
+          </svg>
+          <div class="percentage-text">0%</div>
+        </div>
+        <span class="skill-pill">REST APIs</span>
+      </div>
+
+      <!-- 2. GraphQL -->
+      <div class="skill-item" data-target-percent="85">
+        <div class="progress-box">
+          <svg viewBox="0 0 120 120">
+            <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="circle-progress color-graphql" cx="60" cy="60" r="50"></circle>
+          </svg>
+          <div class="percentage-text">0%</div>
+        </div>
+        <span class="skill-pill">GraphQL</span>
+      </div>
+
+      <!-- 3. M-Pesa Integration -->
+      <div class="skill-item" data-target-percent="90">
+        <div class="progress-box">
+          <svg viewBox="0 0 120 120">
+            <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="circle-progress color-mpesa" cx="60" cy="60" r="50"></circle>
+          </svg>
+          <div class="percentage-text">0%</div>
+        </div>
+        <span class="skill-pill">M-Pesa Integration</span>
+      </div>
+
+      <!-- 4. AI Gateways & Routing -->
+      <div class="skill-item" data-target-percent="80">
+        <div class="progress-box">
+          <svg viewBox="0 0 120 120">
+            <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="circle-progress color-gateway" cx="60" cy="60" r="50"></circle>
+          </svg>
+          <div class="percentage-text">0%</div>
+        </div>
+        <span class="skill-pill">AI Gateways</span>
+      </div>
+
+      <!-- 5. WebSockets & Async -->
+      <div class="skill-item" data-target-percent="85">
+        <div class="progress-box">
+          <svg viewBox="0 0 120 120">
+            <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="circle-progress color-websockets" cx="60" cy="60" r="50"></circle>
+          </svg>
+          <div class="percentage-text">0%</div>
+        </div>
+        <span class="skill-pill">WebSockets & Async</span>
+      </div>
+
+      <!-- 6. OAuth 2.0 & JWT Security -->
+      <div class="skill-item" data-target-percent="90">
+        <div class="progress-box">
+          <svg viewBox="0 0 120 120">
+            <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+            <circle class="circle-progress color-oauth" cx="60" cy="60" r="50"></circle>
+          </svg>
+          <div class="percentage-text">0%</div>
+        </div>
+        <span class="skill-pill">OAuth & JWT Security</span>
+      </div>
+    </div>
+  </div>
+      
 }
 
 /* ---------- Journey timeline ---------- */
