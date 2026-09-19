@@ -14,7 +14,7 @@ export function renderNav() {
   const mount = document.querySelector("[data-nav]");
   if (!mount) return;
   const page = currentPage();
-  const links = (cls) =>
+  const links = () =>
     navLinks
       .map(
         (l) =>
@@ -104,7 +104,8 @@ export function renderStats() {
 export function renderSkills() {
   const mount = document.querySelector("[data-skills]");
   if (!mount) return;
-  mount.innerHTML = skills
+
+  const skillCards = skills
     .map(
       (s, i) => `
       <article class="card card-hover" data-reveal style="--delay:${i * 90}ms">
@@ -113,12 +114,96 @@ export function renderSkills() {
         <p class="lead" style="font-size:.95rem;margin-top:10px">${s.description}</p>
         <div class="meter"><span data-meter="${s.level}"></span></div>
         <div class="meter-label"><span>${s.proficiency}</span><span>${s.level}%</span></div>
-        <div class="chip-row" style="margin-top:16px">${s.stack.map((t) => `<span class="chip">
-          <i class="${t.icon}"></i>${t.name}</span>`).join("")}
-        </div>
+        <div class="chip-row" style="margin-top:16px">${s.stack.map((t) => `<span class="chip"><i class="${t.icon}"></i>${t.name}</span>`).join("")}</div>
       </article>`,
     )
     .join("");
+
+  const integrationCard = `
+    <div class="integration-card">
+      <div class="card-header">
+        <div class="card-icon">
+          <i class="fa-solid fa-code-branch"></i>
+        </div>
+        <h2 class="card-title">API &amp; Architecture Integration</h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- 1. REST APIs -->
+        <div class="skill-item" data-target-percent="95">
+          <div class="progress-box">
+            <svg viewBox="0 0 120 120">
+              <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+              <circle class="circle-progress color-rest" cx="60" cy="60" r="50"></circle>
+            </svg>
+            <div class="percentage-text">0%</div>
+          </div>
+          <span class="skill-pill">REST APIs</span>
+        </div>
+
+        <!-- 2. GraphQL -->
+        <div class="skill-item" data-target-percent="85">
+          <div class="progress-box">
+            <svg viewBox="0 0 120 120">
+              <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+              <circle class="circle-progress color-graphql" cx="60" cy="60" r="50"></circle>
+            </svg>
+            <div class="percentage-text">0%</div>
+          </div>
+          <span class="skill-pill">GraphQL</span>
+        </div>
+
+        <!-- 3. M-Pesa Integration -->
+        <div class="skill-item" data-target-percent="90">
+          <div class="progress-box">
+            <svg viewBox="0 0 120 120">
+              <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+              <circle class="circle-progress color-mpesa" cx="60" cy="60" r="50"></circle>
+            </svg>
+            <div class="percentage-text">0%</div>
+          </div>
+          <span class="skill-pill">M-Pesa Integration</span>
+        </div>
+
+        <!-- 4. AI Gateways & Routing -->
+        <div class="skill-item" data-target-percent="80">
+          <div class="progress-box">
+            <svg viewBox="0 0 120 120">
+              <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+              <circle class="circle-progress color-gateway" cx="60" cy="60" r="50"></circle>
+            </svg>
+            <div class="percentage-text">0%</div>
+          </div>
+          <span class="skill-pill">AI Gateways</span>
+        </div>
+
+        <!-- 5. WebSockets & Async -->
+        <div class="skill-item" data-target-percent="85">
+          <div class="progress-box">
+            <svg viewBox="0 0 120 120">
+              <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+              <circle class="circle-progress color-websockets" cx="60" cy="60" r="50"></circle>
+            </svg>
+            <div class="percentage-text">0%</div>
+          </div>
+          <span class="skill-pill">WebSockets &amp; Async</span>
+        </div>
+
+        <!-- 6. OAuth 2.0 & JWT Security -->
+        <div class="skill-item" data-target-percent="90">
+          <div class="progress-box">
+            <svg viewBox="0 0 120 120">
+              <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+              <circle class="circle-progress color-oauth" cx="60" cy="60" r="50"></circle>
+            </svg>
+            <div class="percentage-text">0%</div>
+          </div>
+          <span class="skill-pill">OAuth &amp; JWT Security</span>
+        </div>
+      </div>
+    </div>`;
+
+  mount.innerHTML = skillCards + integrationCard;
 }
 
 /* ---------- Journey timeline ---------- */
