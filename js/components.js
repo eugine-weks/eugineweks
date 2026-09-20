@@ -162,7 +162,7 @@ export function renderSkills() {
             </svg>
             <div class="percentage-text">0%</div>
           </div>
-          <span class="skill-pill">M-Pesa Integration</span>
+          <span class="skill-pill">M-Pesa API</span>
         </div>
 
         <!-- 4. AI Gateways & Routing -->
@@ -186,7 +186,7 @@ export function renderSkills() {
             </svg>
             <div class="percentage-text">0%</div>
           </div>
-          <span class="skill-pill">WebSockets &amp; Async</span>
+          <span class="skill-pill">WebSockets</span>
         </div>
 
         <!-- 6. OAuth 2.0 & JWT Security -->
@@ -198,7 +198,7 @@ export function renderSkills() {
             </svg>
             <div class="percentage-text">0%</div>
           </div>
-          <span class="skill-pill">OAuth &amp; JWT Security</span>
+          <span class="skill-pill">OAuth &amp; JWT</span>
         </div>
       </div>
     </div>`;

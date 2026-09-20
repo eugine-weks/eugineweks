@@ -43,7 +43,7 @@ export const skills = [
     level: 95,
     description:
       "Pixel-accurate, accessible interfaces built with modern component architecture and design systems.",
-    stack: [{name:"HTML5", icon:"fab fa-html5"}, {name:"CSS3", icon:"fab fa-css3-alt"}, {name:"JavaScript", icon:"fab fa-js"}, {name:"React", icon:"fab fa-react"}],
+    stack: [{name:"HTML5", icon:"fab fa-html5"}, {name:"CSS3", icon:"fab fa-css3-alt"}, {name:"JavaScript", icon:"fab fa-js"}, {name:"React", icon:"fab fa-react"}, {name:"Tailwind CSS", icon:"devicon-tailwindcss-original"}],
   },
   {
     title: "Backend Development",
@@ -52,19 +52,11 @@ export const skills = [
     level: 80,
     description:
       "Secure, well-tested services, authentication flows and business logic built to scale.",
-    stack: [{name:"Node.js", icon:"fab fa-node"}, {name:"PostgreSQL", icon:"devicon-postgresql-plain colored"}, {name:"Typescript", icon:"devicon-typescript-plain colored"}, {name:"Python", icon:"devicon-python-plain colored"}],
+    stack: [{name:"Node.js", icon:"fab fa-node"}, {name:"PostgreSQL", icon:"devicon-postgresql-plain colored"}, {name:"Typescript", icon:"devicon-typescript-plain colored"}, {name:"Python", icon:"devicon-python-plain-wordmark"}, {name:"MySQL", icon:"devicon-mysql-plain colored"}],
   },
   {
-    title: "UI/UX Appreciation",
-    icon: "pen",
-    level: 85,
-    description:
-      "Prototyping, motion detail and accessibility work that make products feel genuinely premium.",
-    stack: ["Figma", "Design Systems", "Motion", "A11y"],
-  },
-  {
-    title: "Cloud & Deployment",
-    icon: "cloud",
+    title: "Tools & Technologies",
+    icon: "tools",
     level: 87,
     description:
       "Containerised deployments, CI/CD pipelines and cost-aware infrastructure with monitoring.",
