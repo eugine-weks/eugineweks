@@ -1,20 +1,16 @@
-/* Skills page layout only. Content and card styling remain unchanged. */
+/* Skills page layout only. Card-specific visual styling remains unchanged. */
 
 @media (min-width: 1000px) {
-  /* Frontend and backend cards share the first row. */
-  .grid-3[data-skills] {
+  .grid[data-skills] {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: stretch;
   }
 
-  /* Tools and Technologies, followed by the integration card, span the full width. */
-  .grid-3[data-skills] > :nth-child(3),
-  .grid-3[data-skills] > :nth-child(4) {
+  .grid[data-skills] > .skills-card--wide,
+  .grid[data-skills] > .integration-card {
     grid-column: 1 / -1;
-  }
-
-  /* The integration card's existing max-width would otherwise prevent full-width layout. */
-  .grid-3[data-skills] > .integration-card {
+    width: 100%;
     max-width: none;
+    min-width: 0;
   }
 }
