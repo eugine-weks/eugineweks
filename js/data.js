@@ -53,15 +53,7 @@ export const skills = [
     description:
       "Secure, well-tested services, authentication flows and business logic built to scale.",
     stack: [{name:"Node.js", icon:"fab fa-node"}, {name:"PostgreSQL", icon:"devicon-postgresql-plain colored"}, {name:"Typescript", icon:"devicon-typescript-plain colored"}, {name:"Python", icon:"devicon-python-plain-wordmark"}, {name:"MySQL", icon:"devicon-mysql-plain colored"}],
-  },
-  {
-    title: "Tools & Technologies",
-    icon: "tools",
-    level: 87,
-    description:
-      "Containerised deployments, CI/CD pipelines and cost-aware infrastructure with monitoring.",
-    stack: ["Docker", "AWS", "CI/CD", "Nginx"],
-  },
+  }
 ];
 
  export const journey = [
@@ -178,7 +170,7 @@ export const projects = [
     image: "images/project-1.jpg",
     category: "Full Stack",
     description:
-      "CAP - church system with role based access for members and Admin, and an intergrated M-pesa API.",
+      "CAP - church system with role based access for members and Admin, and an integrated M-pesa API.",
     tech: ["React", "Node.js", "PostgreSQL"],
     github: "https://github.com/eugine-weks/church-website",
     demo: "https://ejneuro.github.io/church-website",

@@ -1,6 +1,6 @@
 /* Skills page layout only. Card-specific visual styling remains unchanged. */
 
-@media (min-width: 1000px) {
+@media (min-width: 600px) {
   .grid[data-skills] {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     align-items: stretch;

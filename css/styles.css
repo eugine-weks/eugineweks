@@ -1456,7 +1456,7 @@ html[data-theme="light"] .hero-role {
     }
 
     .skill-item {
-      background: rgba(255, 255, 255, 0.01);
+      
       border: 1px solid rgba(255, 255, 255, 0.03);
       border-radius: 20px;
       padding: 24px 16px;
@@ -1505,7 +1505,6 @@ html[data-theme="light"] .hero-role {
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      color: #ffffff;
       font-size: 1.35rem;
       font-weight: 700;
       letter-spacing: -0.5px;
@@ -1514,7 +1513,7 @@ html[data-theme="light"] .hero-role {
     .skill-pill {
       display: inline-block;
       background: rgba(255, 255, 255, 0.06);
-      color: #9ca3af;
+      color: var(--text);
       padding: 8px 18px;
       border-radius: 50px;
       font-size: 0.9rem;
