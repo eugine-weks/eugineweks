@@ -168,60 +168,40 @@ export const projects = [
   {
     title: "Church Management System ",
     image: "images/project-1.jpg",
-    category: "Full Stack",
+    category: "In Progress",
     description:
       "CAP - church system with role based access for members and Admin, and an integrated M-pesa API.",
-    tech: ["React", "Node.js", "PostgreSQL"],
+    tech: ["React", "Node.js", "PostgreSQL", "Daraja API"],
     github: "https://github.com/eugine-weks/church-website",
     demo: "https://ejneuro.github.io/church-website",
   },
   {
     title: "My Portfolio website",
     image: "images/project-2.jpg",
-    category: "Frontend",
-    description: "This is my personal portfolio app to showcase my bio technical skills and featured projects.",
-    tech: ["JavaScript", "CSS", "Morden UI/UX"],
+    category: "Completed",
+    description: "This is my personal portfolio website to showcase technical skills , software development journey and featured projects.",
+    tech: ["HTML5", "Vanilla.js", "CSS3", "Morden UI/UX"],
     github: "https://github.com/eugine-weks/eugineweks",
     demo: "https://eugineweks.netlify.app/",
   },
   {
     title: "WhatsApp Event-Booking App",
     image: "images/project-3.jpg",
-    category: "Full Stack",
+    category: "Futured",
     description:
       "A WhatsApp first event booking platform with payment intergration and ticket processing.",
-    tech: ["React", "Python", "OpenAI"],
+    tech: ["React", "Python", "WhatsApp API", "PostgreSQL"],
     github: "https://github.com/eugine-weks",
     demo: "https://eventshub.com/",
   },
   {
-    title: "Orbit API Platform",
-    image: "images/project-4.jpg",
-    category: "Backend",
-    description:
-      "Versioned REST API with rate limiting, webhook delivery and auto-generated documentation.",
-    tech: ["Node.js", "Redis", "OpenAPI"],
-    github: "https://github.com/",
-    demo: "https://example.com/",
-  },
-  {
-    title: "Flowboard Task Manager",
+    title: "HustleKona",
     image: "images/project-5.jpg",
-    category: "Full Stack",
+    category: "Futured",
     description:
-      "Collaborative kanban board with realtime presence, drag-and-drop and activity history.",
-    tech: ["JavaScript", "WebSockets", "Docker"],
+      "A blue color job finder oriented platform that connects local recruiters with blue color workers in their sorrounding.",
+    tech: ["Typescript", "WebSockets", "Express.js","Open AI"],
     github: "https://github.com/",
     demo: "https://example.com/",
-  },
-  {
-    title: "Havenly Property Finder",
-    image: "images/project-6.jpg",
-    category: "Frontend",
-    description:
-      "Map-driven property discovery with saved searches, filters and shareable listing pages.",
-    tech: ["JavaScript", "Maps API", "CSS"],
-    github: "https://github.com/",
-    demo: "https://example.com/",
-  },
+  }
 ];

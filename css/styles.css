@@ -1031,6 +1031,7 @@ html[data-theme="light"] .hero-role {
   display: grid;
   grid-template-rows: auto 1fr;
   min-height: 100%;
+  padding: 0;
 }
 
 .project-card.is-hidden {
@@ -1054,6 +1055,7 @@ html[data-theme="light"] .hero-role {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  margin: 0 0 auto 0;
   transition: transform 0.4s ease;
 }
 
@@ -1081,13 +1083,14 @@ html[data-theme="light"] .hero-role {
 }
 
 .project-body {
-  padding: 28px;
+  padding: 20px;
   display: grid;
   grid-template-rows: auto auto 1fr auto;
-  gap: 12px;
+  gap: 10px;
 }
 
 .project-cat {
+  display: none;
   font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.1em;
