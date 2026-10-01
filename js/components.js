@@ -209,7 +209,7 @@ export function renderProjects(limit) {
 
   const filters = document.querySelector("[data-filters]");
   if (!filters) return;
-  const cats = ["All", "Completed", "In Progress", "Futured"];
+  const cats = ["All", "Complete", "In Progress", "Futuref"];
   filters.innerHTML = cats
     .map(
       (c) =>
