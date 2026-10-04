@@ -1013,6 +1013,172 @@ html[data-theme="light"] .hero-role {
   color: var(--sky);
 }
 
+/* ---------- Services ---------- */
+
+.service-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+}
+
+.service-card .icon-badge {
+  margin-bottom: 0;
+  align-self: flex-start;
+}
+
+.service-body h3 {
+  font-size: 1.05rem;
+  margin-top: 0;
+}
+
+.service-body p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-top: 6px;
+}
+
+/* ---------- Projects ---------- */
+
+.filter-btn {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  font-weight: 500;
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.filter-btn:hover {
+  border-color: var(--sky);
+  color: var(--sky);
+}
+
+.filter-btn.is-active {
+  background-image: var(--gradient);
+  border-color: transparent;
+  color: #041226;
+}
+
+.project-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.project-card.is-hidden {
+  display: none;
+}
+
+.project-card.card-hover {
+  grid-template-columns: 1fr;
+}
+
+.project-head {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  background: var(--surface-solid);
+  display: grid;
+  place-items: center;
+  margin: -28px -28px 0 -28px;
+}
+
+.project-head img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-head .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: grid;
+  place-items: center;
+  gap: 12px;
+}
+
+.project-card.card-hover:hover .project-head .overlay {
+  opacity: 1;
+}
+
+.project-head .overlay a {
+  display: inline-grid;
+}
+
+.project-body {
+  display: grid;
+  gap: 12px;
+  padding-top: 14px;
+}
+
+.project-cat {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sky);
+}
+
+.project-body h3 {
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.project-body p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* ---------- Reveal animation ---------- */
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+[data-reveal="left"] {
+  transform: translateX(-30px);
+}
+
+[data-reveal="right"] {
+  transform: translateX(30px);
+}
+
+[data-reveal="zoom"] {
+  transform: scale(0.95);
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+[data-reveal].is-visible[data-reveal="left"] {
+  transform: translateX(0);
+}
+
+[data-reveal].is-visible[data-reveal="right"] {
+  transform: translateX(0);
+}
+
+[data-reveal].is-visible[data-reveal="zoom"] {
+  transform: scale(1);
+}
+
 /* ---------- Contact form ---------- */
 
 .contact-grid {
@@ -1149,6 +1315,7 @@ html[data-theme="light"] .hero-role {
   background: var(--bg-2);
   border-top: 1px solid var(--border);
   padding: 40px 0;
+  margin-top: 40px;
 }
 
 .footer-inner {
@@ -1194,45 +1361,14 @@ html[data-theme="light"] .hero-role {
   border-radius: 8px;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 599px) {
   .footer-inner {
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr;
+    text-align: center;
   }
-}
-
-/* ---------- Reveal animation ---------- */
-
-[data-reveal] {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1), transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-}
-
-[data-reveal="left"] {
-  transform: translateX(-30px);
-}
-
-[data-reveal="right"] {
-  transform: translateX(30px);
-}
-
-[data-reveal="zoom"] {
-  transform: scale(0.95);
-}
-
-[data-reveal].is-visible {
-  opacity: 1;
-  transform: none;
-}
-
-[data-reveal].is-visible[data-reveal="left"] {
-  transform: translateX(0);
-}
-
-[data-reveal].is-visible[data-reveal="right"] {
-  transform: translateX(0);
-}
-
-[data-reveal].is-visible[data-reveal="zoom"] {
-  transform: scale(1);
+  
+  .powered {
+    justify-content: center;
+    text-align: center;
+  }
 }
