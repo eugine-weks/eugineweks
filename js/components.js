@@ -118,7 +118,7 @@ export function renderSkills() {
       </article>`,
     )
     .join("");
-
+ mount.innerHTML = skillCards;
   
 }
 
