@@ -1,0 +1,42 @@
+name: Portfolio CI/CD Pipeline
+
+# Step 1: Define what triggers the pipeline
+on:
+  push:
+    branches:
+      - main  
+  pull_request:
+    branches:
+      - main
+
+# Step 2: Define the jobs to run
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest # Spins up a fresh, secure Linux virtual machine
+
+    steps:
+      # Step 3: Pull the code from repository into the Linux machine
+      - name: Checkout Repository Code
+        uses: actions/checkout@v4
+
+      # Step 4: Set up the programming environment
+      - name: Set up Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      # Step 5: Install dependencies (Continuous Integration)
+      - name: Install Project Dependencies
+        run: npm ci
+
+      # Step 6: Code Quality Verification (Linting / Testing)
+      - name: Run Code Linter and Tests
+        run: |
+          npm run lint --if-present
+          npm test --if-present
+
+      # Step 7: Production Build Optimization (Continuous Deployment Readiness)
+      - name: Build Production Web Assets
+        run: npm run build
+          
