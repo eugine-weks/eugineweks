@@ -1129,6 +1129,38 @@ html[data-theme="light"] .hero-role {
   color: var(--muted);
   font-size: 0.95rem;
 }
+/* ----------Filter Buttons----------*/
+.filters {
+  margin-bottom: 44px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition:
+    all 0.25s ease;
+}
+
+.filter-btn:hover {
+  border-color: rgba(0, 191, 255, 0.4);
+  color: var(--sky);
+}
+
+.filter-btn.is-active {
+  background-image: var(--gradient);
+  color: #041226;
+  border-color: transparent;
+}
 
 /* ---------- Reveal animation ---------- */
 
