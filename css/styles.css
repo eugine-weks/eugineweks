@@ -409,19 +409,18 @@ html[data-theme="light"] .glow {
   font-size: 1.1rem;
   letter-spacing: 0.08em;
 }
+.brand-name{
+  font-size: 1.8rem;
+}
 
-.brand-mark {
-  width: 34px;
-  height: 34px;
-  border-radius: 11px;
-  background-image: var(--gradient);
-  color: #04121f;
-  display: grid;
-  place-items: center;
-  font-size: 1.1rem;
-  font-weight: 800;
-  letter-spacing: 0;
-  box-shadow: var(--shadow-glow);
+.powered img {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 4px;
+  flex-shrink: 0;
 }
 
 .nav-right {
