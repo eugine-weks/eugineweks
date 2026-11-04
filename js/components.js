@@ -26,11 +26,10 @@ export function renderNav() {
     <nav class="site-nav" aria-label="Main navigation">
       <div class="container nav-inner">
         <a class="brand" href="index.html" aria-label="${profile.name} — home">
-          <span class="brand-mark" aria-hidden="true">EJ</span>
-          <span>Eugine<span class="gradient-text"> </span>Weks</span>
-        </a>
+          <img src="images/logo.jpeg" class="brand" alt="Fixera logo" loading="lazy" />
+          <span class="brand-name"><span class="gradient-text">FiX</span>era</span>
+        <ul class="nav-links">${links()}</ul>
         <div class="nav-right">
-          <ul class="nav-links">${links()}</ul>
           <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle colour theme">
             <span class="theme-icon-dark">${icon("sun", 20)}</span>
             <span class="theme-icon-light">${icon("moon", 20)}</span>
