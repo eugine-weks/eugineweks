@@ -31,8 +31,8 @@ export const navLinks = [
 export const stats = [
   { label: "Projects Completed", value: 5, suffix: "+" },
   { label: "Years of Experience", value: 3, suffix: "" },
-  { label: "Happy Clients", value: 10, suffix: "+" },
-  { label: "Technologies Used", value: 12, suffix: "" },
+  { label: "Happy Clients", value: 24, suffix: "+" },
+  { label: "Technologies Used", value: 15, suffix: "" },
 ];
 
 export const skills = [
