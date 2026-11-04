@@ -26,9 +26,10 @@ export function renderNav() {
     <nav class="site-nav" aria-label="Main navigation">
       <div class="container nav-inner">
         <a class="brand" href="index.html" aria-label="${profile.name} — home">
-          <img src="images/logo.jpeg" class="brand" alt="Fixera logo" loading="lazy" />
+           <img src="images/logo.jpeg" class="brand" alt="Fixera logo" loading="lazy" />
           <span class="brand-name"><span class="gradient-text">FiX</span>era</span>
-        <ul class="nav-links">${links()}</ul>
+        </a>
+         <ul class="nav-links">${links()}</ul>
         <div class="nav-right">
           <button class="icon-btn" type="button" data-theme-toggle aria-label="Toggle colour theme">
             <span class="theme-icon-dark">${icon("sun", 20)}</span>
@@ -117,8 +118,7 @@ export function renderSkills() {
       </article>`,
     )
     .join("");
- mount.innerHTML = skillCards;
-  
+  mount.innerHTML = skillCards;
 }
 
 /* ---------- Journey timeline ---------- */
@@ -275,3 +275,4 @@ export function renderFooter() {
       </div>
     </footer>`;
 }
+  
